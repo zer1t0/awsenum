@@ -1,0 +1,21 @@
+{
+    "response": {
+        "Users": [
+            {
+                "UserName": "Administrator",
+                "UserId": "AIDAXY5COEUBX46MKPGGP",
+                "Path": "/",
+                "CreateDate": "2022-03-20 10:14:44+00:00",
+                "Arn": "arn:aws:iam::012345789012:user/Administrator"
+            },
+            {
+                "UserName": "iamtest",
+                "UserId": "AIDAXY5COEUB3MJ3FVTO2",
+                "Path": "/",
+                "CreateDate": "2022-05-07 12:24:13+00:00",
+                "Arn": "arn:aws:iam::012345789012:user/iamtest"
+            }
+        ],
+        "IsTruncated": false
+    }
+}

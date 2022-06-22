@@ -1,0 +1,11 @@
+{
+    "response": {
+        "PolicyNames": [
+            "lambda-invoker"
+        ]
+    },
+
+    "args": {
+        "RoleName": "cg-lambda-invoker-vulnerable_lambda_cgidqhlz86ajy2"
+    }
+}

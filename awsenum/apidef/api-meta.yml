@@ -1,0 +1,1349 @@
+accessanalyzer: {}
+
+account: {}
+
+acm: {}
+
+acm-pca: {}
+
+alexaforbusiness: {}
+
+amplify: {}
+
+amplifybackend:
+
+  list-s3-buckets:
+    outvars:
+      s3-buckets-names: "response.Buckets[].Name"
+
+amplifyuibuilder: {}
+
+apigateway:
+
+  get-sdk-types:
+    versions:
+      - scope: public
+
+apigatewaymanagementapi: {}
+
+apigatewayv2: {}
+
+appconfig: {}
+
+appconfigdata: {}
+
+appflow: {}
+
+appintegrations: {}
+
+application-autoscaling: {}
+
+application-insights: {}
+
+applicationcostprofiler: {}
+
+appmesh: {}
+
+apprunner: {}
+
+appstream:
+
+  describe-images:
+    versions:
+      - args:
+          Type:
+            value: PRIVATE
+      - args:
+          Type:
+            value: SHARED
+
+appsync: {}
+
+athena: {}
+
+auditmanager: {}
+
+autoscaling: {}
+
+autoscaling-plans: {}
+
+backup: {}
+
+backup-gateway: {}
+
+batch: {}
+
+billingconductor: {}
+
+braket: {}
+
+budgets: {}
+
+ce: {}
+
+chime: {}
+
+chime-sdk-identity: {}
+
+chime-sdk-media-pipelines: {}
+
+chime-sdk-meetings: {}
+
+chime-sdk-messaging: {}
+
+cloud9: {}
+
+cloudcontrol: {}
+
+clouddirectory: {}
+
+cloudformation: {}
+
+cloudfront: {}
+
+cloudhsm: {}
+
+cloudhsmv2: {}
+
+cloudsearch: {}
+
+cloudsearchdomain: {}
+
+cloudtrail: {}
+
+cloudwatch: {}
+
+codeartifact: {}
+
+codebuild:
+
+  list-curated-environment-images:
+    versions:
+      - scope: public
+
+codecommit: {}
+
+codedeploy: {}
+
+codeguru-reviewer: {}
+
+codeguruprofiler: {}
+
+codepipeline:
+
+  list-action-types:
+    versions:
+      - args:
+          actionOwnerFilter:
+            value: Custom
+
+codestar: {}
+
+codestar-connections: {}
+
+codestar-notifications:
+
+  list-event-types:
+    versions:
+      - scope: public
+
+cognito-identity: {}
+
+cognito-idp: {}
+
+cognito-sync: {}
+
+comprehend: {}
+
+comprehendmedical: {}
+
+compute-optimizer: {}
+
+config: {}
+
+connect: {}
+
+connect-contact-lens: {}
+
+connectparticipant: {}
+
+cur: {}
+
+customer-profiles: {}
+
+databrew: {}
+
+dataexchange: {}
+
+datapipeline: {}
+
+datasync: {}
+
+dax: {}
+
+detective: {}
+
+devicefarm: {}
+
+devops-guru: {}
+
+directconnect:
+
+  describe-locations:
+    versions:
+      - scope: public
+
+discovery: {}
+
+dlm: {}
+
+dms:
+
+  describe-endpoint-types:
+    versions:
+      - scope: public
+
+  describe-event-categories:
+    versions:
+      - scope: public
+
+  describe-orderable-replication-instances:
+    versions:
+      - scope: public
+
+docdb:
+
+  describe-db-engine-versions:
+    versions:
+      - scope: public
+
+  describe-event-categories:
+    versions:
+      - scope: public
+
+drs: {}
+
+ds: {}
+
+dynamodb: {}
+
+dynamodbstreams: {}
+
+ebs: {}
+
+ec2:
+
+  describe-account-attributes: {}
+
+  describe-aggregate-id-format:
+    versions:
+      - scope: public
+
+  describe-availability-zones:
+    versions:
+      - scope: public
+
+  describe-fpga-images:
+    versions:
+      - args:
+          Owners:
+            value: [self]
+
+  describe-host-reservation-offerings:
+    versions:
+      - scope: public
+
+  describe-id-format:
+    versions:
+      - scope: public
+
+  describe-images:
+    versions:
+      - args:
+          OwnerIds:
+            value: [self]
+
+  describe-instance-type-offerings:
+    versions:
+      - scope: public
+
+  describe-instance-types:
+    versions:
+      - scope: public
+
+  describe-instances:
+    outvars:
+      ec2-instances-ids: "response.Reservations[].Instances[].InstanceId"
+
+  describe-key-pairs: {}
+
+  describe-principal-id-format:
+    versions:
+      - scope: public
+
+  describe-regions:
+    versions:
+      - scope: public
+
+  describe-reserved-instances-offerings:
+    versions:
+      - scope: public
+
+  describe-snapshots:
+    versions:
+      - args:
+          OwnerIds:
+            value: [self]
+
+  describe-spot-price-history:
+    versions:
+      - scope: public
+
+  describe-subnets: {}
+
+  describe-vpc-endpoint-services:
+    versions:
+      - scope: public
+
+  describe-vpcs: {}
+
+  get-password-data:
+    versions:
+      - invar: ec2-instances-ids
+        args:
+          InstanceId:
+            invar_path: ""
+            mode: "foreach"
+
+  get-vpn-connection-device-types:
+    versions:
+      - scope: public
+
+ec2-instance-connect: {}
+
+ecr: {}
+
+ecr-public: {}
+
+ecs:
+
+  describe-capacity-providers:
+    versions:
+      - scope: public
+
+  describe-tasks:
+    versions:
+      - invar:
+          name: ecs-cluster-tasks
+          mode: single
+        args:
+          cluster:
+            invar_path: "cluster"
+            mode: single
+          tasks:
+            invar_path: "tasks"
+            mode: single
+
+  describe-services:
+    versions:
+      - invar:
+          name: ecs-cluster-services
+          mode: single
+        args:
+          cluster:
+            invar_path: "cluster"
+            mode: single
+          services:
+            invar_path: "services"
+            mode: single
+
+  list-clusters:
+    outvars:
+      ecs-clusters-arns: "response.clusterArns"
+
+  list-services:
+    versions:
+      - invar: ecs-clusters-arns
+        args:
+          cluster:
+            invar_path: ""
+            mode: foreach
+
+        outvars:
+          ecs-cluster-services: "{cluster: args.cluster, services: response.serviceArns}"
+
+
+  list-tasks:
+    versions:
+      - invar: ecs-clusters-arns
+        args:
+          cluster:
+            invar_path: ""
+            mode: foreach
+
+        outvars:
+          ecs-cluster-tasks: "{cluster: args.cluster, tasks: response.taskArns}"
+
+
+efs: {}
+
+eks:
+
+  describe-addon-versions:
+    versions:
+      - scope: public
+
+elastic-inference:
+
+  describe-accelerator-types:
+    versions:
+      - scope: public
+
+elasticache:
+
+  describe-cache-engine-versions:
+    versions:
+      - scope: public
+
+  describe-service-updates:
+    versions:
+      - scope: public
+
+  describe-reserved-cache-nodes-offerings:
+    versions:
+      - scope: public
+
+elasticbeanstalk:
+
+  list-available-solution-stacks:
+    versions:
+      - scope: public
+
+  list-platform-branches:
+    versions:
+      - scope: public
+
+  list-platform-versions:
+    versions:
+      - scope: public
+
+elastictranscoder:
+
+  list-presets:
+    versions:
+      - scope: public
+
+elb:
+
+  describe-load-balancer-policy-types:
+    versions:
+      - scope: public
+
+elbv2: {}
+
+emr:
+
+  list-release-labels:
+    versions:
+      - scope: public
+
+emr-containers: {}
+
+es:
+
+  describe-reserved-elasticsearch-instance-offerings:
+    versions:
+      - scope: public
+
+  get-compatible-elasticsearch-versions:
+    versions:
+      - scope: public
+
+  list-elasticsearch-versions:
+    versions:
+      - scope: public
+
+events: {}
+
+evidently: {}
+
+finspace: {}
+
+finspace-data: {}
+
+firehose: {}
+
+fis:
+
+  list-actions:
+    versions:
+      - scope: public
+
+  list-target-resource-types:
+    versions:
+      - scope: public
+
+fms: {}
+
+forecast: {}
+
+forecastquery: {}
+
+frauddetector: {}
+
+fsx: {}
+
+gamelift: {}
+
+gamesparks: {}
+
+glacier: {}
+
+globalaccelerator: {}
+
+glue: {}
+
+grafana: {}
+
+greengrass: {}
+
+greengrassv2: {}
+
+groundstation: {}
+
+guardduty: {}
+
+health: {}
+
+healthlake: {}
+
+honeycode: {}
+
+iam:
+
+  get-policy:
+    versions:
+      - invar: iam-policies-arns
+        args:
+          PolicyArn:
+            mode: "foreach"
+            # avoid query for aws managed policies
+            invar_path: '[?!starts_with(@, `arn:aws:iam::aws:`)]'
+
+    outvars:
+      iam-policy-versions: "response.Policy.{policy: Arn, versions: [DefaultVersionId]}"
+
+  get-policy-version:
+    versions:
+      - invar: iam-policy-versions
+        args:
+          PolicyArn:
+            invar_path: "policy"
+            mode: "single"
+
+          VersionId:
+            invar_path: "versions"
+            mode: "foreach"
+
+      - invar:
+          name: iam-policies-versions
+          mode: foreach
+        args:
+          PolicyArn:
+            invar_path: "policy"
+            mode: single
+
+          VersionId:
+            invar_path: "versions"
+            mode: foreach
+      
+  get-role:
+    versions:
+      - invar: iam-rolenames
+        args:
+          RoleName:
+            invar_path: ""
+            mode: foreach
+
+  get-role-policy:
+    versions:
+      - invar: iam-role-policies
+
+        args:
+          RoleName:
+            invar_path: "role"
+            mode: "single"
+          PolicyName:
+            invar_path: "policies"
+            mode: "foreach"
+
+  get-user-policy:
+    versions:
+      - invar: iam-user-attached-policies
+
+        args:
+          UserName:
+            invar_path: "user"
+            mode: "single"
+          PolicyName:
+            invar_path: "policies"
+            mode: "foreach"
+
+  list-attached-role-policies:
+    versions:
+      - invar: iam-rolenames
+        args:
+          RoleName:
+            invar_path: ""
+            mode: foreach
+
+    outvars:
+      iam-policies-arns: "response.AttachedPolicies[].PolicyArn"
+
+  list-attached-user-policies:
+    versions:
+      - invar: iam-usernames
+
+        args:
+          UserName:
+            invar_path: ""
+            mode: "foreach"
+
+    outvars:
+      iam-policies-arns: "response.AttachedPolicies[].PolicyArn"
+
+  list-policies:
+    versions:
+      - args:
+          Scope:
+            value: Local
+
+    outvars:
+      iam-policies-arns: "response.Policies[].Arn"
+      iam-policies-versions: "response.Policies[].{policy: Arn, versions: [DefaultVersionId]}"
+
+  list-policy-versions:
+    versions:
+      - invar: iam-policies-arns
+        args:
+          PolicyArn:
+            mode: "foreach"
+            # avoid query for aws managed policies
+            invar_path: '[?!starts_with(@, `arn:aws:iam::aws:`)]'
+
+    outvars:
+      iam-policy-versions: "{policy: args.PolicyArn, versions: response.Versions[].VersionId}"
+
+  list-role-policies:
+    versions:
+      - invar: iam-rolenames
+        args:
+          RoleName:
+            invar_path: ""
+            mode: foreach
+
+    outvars:
+      iam-role-policies: "{role: args.RoleName, policies: response.PolicyNames}"
+
+  list-user-policies:
+    versions:
+      - invar: iam-usernames
+        args:
+          UserName:
+            invar_path: ""
+            mode: "foreach"
+
+    outvars:
+      iam-user-attached-policies: "{user: args.UserName, policies: response.PolicyNames}"
+
+  list-roles:
+    outvars:
+      iam-rolenames: "response.Roles[].RoleName"
+
+  list-users:
+    outvars:
+      iam-usernames: "response.Users[].UserName"
+
+  get-user:
+    versions:
+      - {}
+      - invar: iam-usernames
+        args:
+          UserName:
+            invar_path: ""
+            mode: foreach
+
+identitystore: {}
+
+imagebuilder: {}
+
+importexport: {}
+
+inspector: {}
+
+inspector2: {}
+
+iot:
+
+  list-managed-job-templates:
+    versions:
+      - scope: public
+
+iot-data: {}
+
+iot-jobs-data: {}
+
+iot1click-devices: {}
+
+iot1click-projects: {}
+
+iotanalytics: {}
+
+iotdeviceadvisor: {}
+
+iotevents: {}
+
+iotevents-data: {}
+
+iotfleethub: {}
+
+iotsecuretunneling: {}
+
+iotsitewise: {}
+
+iotthingsgraph: {}
+
+iottwinmaker: {}
+
+iotwireless: {}
+
+ivs: {}
+
+ivschat: {}
+
+kafka:
+
+  get-compatible-kafka-versions:
+    versions:
+      - scope: public
+
+  list-kafka-versions:
+    versions:
+      - scope: public
+
+kafkaconnect: {}
+
+kendra: {}
+
+keyspaces: {}
+
+kinesis: {}
+
+kinesis-video-archived-media: {}
+
+kinesis-video-media: {}
+
+kinesis-video-signaling: {}
+
+kinesisanalytics: {}
+
+kinesisanalyticsv2: {}
+
+kinesisvideo: {}
+
+kms: {}
+
+lakeformation: {}
+
+lambda:
+
+  get-function:
+    versions:
+      - invar: lambda-functions-names
+        args:
+          FunctionName:
+            invar_path: ""
+            mode: "foreach"
+
+
+  list-functions:
+    outvars:
+      lambda-functions-names: "response.Functions[].FunctionName"
+
+lex-models:
+  get-builtin-intents:
+    versions:
+      - scope: public
+
+  get-builtin-slot-types:
+    versions:
+      - scope: public
+
+lex-runtime: {}
+
+lexv2-models: {}
+
+lexv2-runtime: {}
+
+license-manager: {}
+
+lightsail:
+
+  get-blueprints:
+    versions:
+      - scope: public
+
+  get-bucket-bundles:
+    versions:
+      - scope: public
+
+  get-bundles:
+    versions:
+      - scope: public
+
+  get-container-service-powers:
+    versions:
+      - scope: public
+
+  get-regions:
+    versions:
+      - scope: public
+
+  get-relational-database-blueprints:
+    versions:
+      - scope: public
+
+  get-relational-database-bundles:
+    versions:
+      - scope: public
+
+location: {}
+
+logs: {}
+
+lookoutequipment: {}
+
+lookoutmetrics: {}
+
+lookoutvision: {}
+
+machinelearning: {}
+
+macie: {}
+
+macie2: {}
+
+managedblockchain: {}
+
+marketplace-catalog: {}
+
+marketplace-entitlement: {}
+
+marketplacecommerceanalytics: {}
+
+mediaconnect: {}
+
+mediaconvert: {}
+
+medialive:
+  list-offerings:
+    versions:
+      - scope: public
+
+mediapackage: {}
+
+mediapackage-vod: {}
+
+mediastore: {}
+
+mediastore-data: {}
+
+mediatailor: {}
+
+memorydb: {}
+
+meteringmarketplace: {}
+
+mgh: {}
+
+mgn: {}
+
+migration-hub-refactor-spaces: {}
+
+migrationhub-config: {}
+
+migrationhubstrategy: {}
+
+mobile: {}
+
+mq:
+
+  describe-broker-engine-types:
+    versions:
+      - scope: public
+
+  describe-broker-instance-options:
+    versions:
+      - scope: public
+
+mturk: {}
+
+mwaa: {}
+
+neptune:
+
+  describe-db-engine-versions:
+    versions:
+      - scope: public
+
+  describe-event-categories:
+    versions:
+      - scope: public
+
+network-firewall: {}
+
+networkmanager: {}
+
+nimble: {}
+
+opensearch:
+
+  describe-reserved-instance-offerings:
+    versions:
+      - scope: public
+
+  get-compatible-versions:
+    versions:
+      - scope: public
+
+  list-versions:
+    versions:
+      - scope: public
+
+opsworks:
+
+  describe-operating-systems:
+    versions:
+      - scope: public
+
+opsworkscm: {}
+
+organizations: {}
+
+outposts:
+
+  list-catalog-items:
+    versions:
+      - scope: public
+
+panorama: {}
+
+personalize: {}
+
+personalize-events: {}
+
+personalize-runtime: {}
+
+pi: {}
+
+pinpoint: {}
+
+pinpoint-email: {}
+
+pinpoint-sms-voice: {}
+
+pinpoint-sms-voice-v2: {}
+
+polly:
+
+  describe-voices:
+    versions:
+      - scope: public
+
+pricing: {}
+
+proton: {}
+
+qldb: {}
+
+qldb-session: {}
+
+quicksight: {}
+
+ram:
+  list-resource-types:
+    versions:
+      - scope: public
+
+rbin: {}
+
+rds:
+
+  describe-db-engine-versions:
+    versions:
+      - scope: public
+
+  describe-event-categories:
+    versions:
+      - scope: public
+
+  describe-reserved-db-instances-offerings:
+    versions:
+      - scope: public
+
+  describe-source-regions:
+    versions:
+      - scope: public
+
+rds-data: {}
+
+redshift:
+
+  describe-cluster-tracks:
+    versions:
+      - scope: public
+
+  describe-event-categories:
+    versions:
+      - scope: public
+
+  describe-orderable-cluster-options:
+    versions:
+      - scope: public
+
+  describe-reserved-node-offerings:
+    versions:
+      - scope: public
+
+redshift-data: {}
+
+rekognition: {}
+
+resiliencehub:
+
+  list-suggested-resiliency-policies:
+    versions:
+      - scope: public
+
+resource-groups: {}
+
+resourcegroupstaggingapi: {}
+
+robomaker: {}
+
+route53:
+
+  get-checker-ip-ranges:
+    versions:
+      - scope: public
+
+  list-geo-locations:
+    versions:
+      - scope: public
+
+route53-recovery-cluster: {}
+
+route53-recovery-control-config: {}
+
+route53-recovery-readiness: {}
+
+route53domains: {}
+
+route53resolver: {}
+
+rum: {}
+
+s3:
+
+  get-bucket-accelerate-configuration:
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  get-bucket-acl:
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  # returns client error if cors configuration is not found
+  get-bucket-cors:
+    allowed_client_error: NoSuchCORSConfiguration
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  # returns client error if encryption configuration isn't found
+  get-bucket-encryption:
+    allowed_client_error: ServerSideEncryptionConfigurationNotFoundError
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  get-bucket-logging:
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  get-bucket-ownership-controls:
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+
+  # returns client error if the bucket policy doesn't exist
+  get-bucket-policy:
+    allowed_client_error: NoSuchBucketPolicy
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  # returns client error if the bucket policy doesn't exist
+  get-bucket-policy-status:
+    allowed_client_error: NoSuchBucketPolicy
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  # returns client error if website configuration isn't found
+  get-bucket-website:
+    allowed_client_error: NoSuchWebsiteConfiguration
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  list-buckets:
+    outvars:
+      s3-buckets-names: "response.Buckets[].Name"
+
+  list-objects:
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  list-objects-v2:
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+  list-object-versions:
+    versions:
+      - invar: s3-buckets-names
+        args:
+          Bucket:
+            invar_path: ""
+            mode: "foreach"
+
+s3control: {}
+
+s3outposts: {}
+
+sagemaker:
+
+  list-model-metadata:
+    versions:
+      - scope: public
+
+sagemaker-a2i-runtime: {}
+
+sagemaker-edge: {}
+
+sagemaker-featurestore-runtime: {}
+
+sagemaker-runtime: {}
+
+savingsplans:
+
+  describe-savings-plans-offering-rates:
+    versions:
+      - scope: public
+
+  describe-savings-plans-offerings:
+    versions:
+      - scope: public
+
+schemas: {}
+
+sdb: {}
+
+secretsmanager:
+
+  get-secret-value:
+    versions:
+      - invar: secretsmanager-secrets-arns
+        args:
+          SecretId:
+            invar_path: ""
+            mode: foreach
+
+  list-secrets:
+    outvars:
+      secretsmanager-secrets-arns: "response.SecretList[].ARN"
+
+securityhub:
+
+  describe-standards:
+    versions:
+      - scope: public
+
+serverlessrepo: {}
+
+service-quotas: {}
+
+servicecatalog: {}
+
+servicecatalog-appregistry: {}
+
+servicediscovery: {}
+
+ses: {}
+
+sesv2: {}
+
+shield: {}
+
+signer:
+
+  list-signing-platforms:
+    versions:
+      - scope: public
+
+sms: {}
+
+snow-device-management: {}
+
+snowball: {}
+
+sns: {}
+
+sqs: {}
+
+ssm:
+
+  describe-available-patches:
+    versions:
+      - scope: public
+
+  describe-patch-baselines:
+    versions:
+      - scope: public
+      - args:
+          Filters:
+            value: [{Key: OWNER, Values: [Self]}]
+
+  get-inventory-schema:
+    versions:
+      - scope: public
+
+  list-documents:
+    versions:
+      - scope: public
+      - args:
+          Filters:
+            value: [{Key: Owner, Values: [Self]}]
+
+ssm-contacts: {}
+
+ssm-incidents: {}
+
+sso: {}
+
+sso-admin: {}
+
+sso-oidc: {}
+
+stepfunctions: {}
+
+storagegateway: {}
+
+sts: {}
+
+support: {}
+
+swf:
+
+  list-domains:
+    versions:
+      - args:
+          registrationStatus:
+            value: REGISTERED
+
+      - args:
+          registrationStatus:
+            value: DEPRECATED
+
+synthetics:
+
+  describe-runtime-versions:
+    versions:
+      - scope: public
+
+textract: {}
+
+timestream-query: {}
+
+timestream-write: {}
+
+transcribe: {}
+
+transfer: {}
+
+translate: {}
+
+voice-id: {}
+
+waf: {}
+
+waf-regional: {}
+
+wafv2: {}
+
+wellarchitected: {}
+
+wisdom: {}
+
+workdocs: {}
+
+worklink: {}
+
+workmail: {}
+
+workmailmessageflow: {}
+
+workspaces: {}
+
+workspaces-web: {}
+
+xray: {}

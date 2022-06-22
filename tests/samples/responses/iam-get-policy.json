@@ -1,0 +1,21 @@
+{
+    "args": {
+        "PolicyArn": "arn:aws:iam::123456789012:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidu63ju2eo1y"
+    },
+    "response": {
+        "Policy": {
+            "Arn": "arn:aws:iam::123456789012:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidu63ju2eo1y",
+            "AttachmentCount": 1,
+            "CreateDate": "2022-06-16 05:57:05+00:00",
+            "DefaultVersionId": "v1",
+            "Description": "cg-raynor-policy",
+            "IsAttachable": true,
+            "Path": "/",
+            "PermissionsBoundaryUsageCount": 0,
+            "PolicyId": "ANPAXY5COEUBSIRZANN57",
+            "PolicyName": "cg-raynor-policy-iam_privesc_by_rollback_cgidu63ju2eo1y",
+            "Tags": [],
+            "UpdateDate": "2022-06-16 05:57:07+00:00"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "args": {},
+    "response": {
+        "Functions": [
+            {
+                "Architectures": [
+                    "x86_64"
+                ],
+                "CodeSha256": "U982lU6ztPq9QlRmDCwlMKzm4WuOfbpbCou1neEBHkQ=",
+                "CodeSize": 991559,
+                "Description": "This function will apply a managed policy to the user of your choice, so long as the database says that it's okay...",
+                "EphemeralStorage": {
+                    "Size": 512
+                },
+                "FunctionArn": "arn:aws:lambda:us-east-1:123456789012:function:vulnerable_lambda_cgidmqmvxyxvk9-policy_applier_lambda1",
+                "FunctionName": "vulnerable_lambda_cgidmqmvxyxvk9-policy_applier_lambda1",
+                "Handler": "main.handler",
+                "LastModified": "2022-06-14T06:16:10.687+0000",
+                "MemorySize": 128,
+                "PackageType": "Zip",
+                "RevisionId": "5b37aa26-356b-4052-b3cd-b209787ab5f4",
+                "Role": "arn:aws:iam::123456789012:role/vulnerable_lambda_cgidmqmvxyxvk9-policy_applier_lambda1",
+                "Runtime": "python3.9",
+                "Timeout": 3,
+                "TracingConfig": {
+                    "Mode": "PassThrough"
+                },
+                "Version": "$LATEST"
+            }
+        ]
+    }
+}

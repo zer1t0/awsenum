@@ -1,0 +1,8 @@
+{
+    "iam-role-policies": {
+        "role": "cg-lambda-invoker-vulnerable_lambda_cgidqhlz86ajy2",
+        "policies": [
+            "lambda-invoker"
+        ]
+    }
+}

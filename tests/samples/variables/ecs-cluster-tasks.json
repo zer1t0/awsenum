@@ -1,0 +1,11 @@
+{
+    "ecs-cluster-tasks": {
+        "cluster": "arn:aws:ecs:us-east-1:123456789012:cluster/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster",
+        "tasks": [
+            "arn:aws:ecs:us-east-1:123456789012:task/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster/23935a115a614966bcb29ad05a4e5f37",
+            "arn:aws:ecs:us-east-1:123456789012:task/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster/478feecd20da4193a44d2c36a43e5abd",
+            "arn:aws:ecs:us-east-1:123456789012:task/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster/9548c2147007486dafb15cdcd04f7a65",
+            "arn:aws:ecs:us-east-1:123456789012:task/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster/be02604fad1d4bdd9ded74ff49688fbc"
+        ]
+    }
+}

@@ -1,0 +1,153 @@
+{
+    "response": {
+        "Roles": [
+            {
+                "RoleName": "AWSServiceRoleForECS",
+                "RoleId": "AROAXY5COEUBQFBB44UHV",
+                "Path": "/aws-service-role/ecs.amazonaws.com/",
+                "MaxSessionDuration": 3600,
+                "Description": "Role to enable Amazon ECS to manage your cluster.",
+                "CreateDate": "2022-03-31 06:20:52+00:00",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Principal": {
+                                "Service": "ecs.amazonaws.com"
+                            },
+                            "Effect": "Allow",
+                            "Action": "sts:AssumeRole"
+                        }
+                    ]
+                },
+                "Arn": "arn:aws:iam::123456789012:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS"
+            },
+            {
+                "RoleName": "AWSServiceRoleForElasticLoadBalancing",
+                "RoleId": "AROAXY5COEUBSVL274ZXV",
+                "Path": "/aws-service-role/elasticloadbalancing.amazonaws.com/",
+                "MaxSessionDuration": 3600,
+                "Description": "Allows ELB to call AWS services on your behalf.",
+                "CreateDate": "2022-04-06 05:41:44+00:00",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Principal": {
+                                "Service": "elasticloadbalancing.amazonaws.com"
+                            },
+                            "Effect": "Allow",
+                            "Action": "sts:AssumeRole"
+                        }
+                    ]
+                },
+                "Arn": "arn:aws:iam::123456789012:role/aws-service-role/elasticloadbalancing.amazonaws.com/AWSServiceRoleForElasticLoadBalancing"
+            },
+            {
+                "RoleName": "AWSServiceRoleForRDS",
+                "RoleId": "AROAXY5COEUBUCRJIV44X",
+                "Path": "/aws-service-role/rds.amazonaws.com/",
+                "MaxSessionDuration": 3600,
+                "Description": "Allows Amazon RDS to manage AWS resources on your behalf",
+                "CreateDate": "2022-04-06 05:41:43+00:00",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Principal": {
+                                "Service": "rds.amazonaws.com"
+                            },
+                            "Effect": "Allow",
+                            "Action": "sts:AssumeRole"
+                        }
+                    ]
+                },
+                "Arn": "arn:aws:iam::123456789012:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS"
+            },
+            {
+                "RoleName": "AWSServiceRoleForSupport",
+                "RoleId": "AROAXY5COEUBYR5CMOB7O",
+                "Path": "/aws-service-role/support.amazonaws.com/",
+                "MaxSessionDuration": 3600,
+                "Description": "Enables resource access for AWS to provide billing, administrative and support services",
+                "CreateDate": "2021-02-11 18:33:54+00:00",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Principal": {
+                                "Service": "support.amazonaws.com"
+                            },
+                            "Effect": "Allow",
+                            "Action": "sts:AssumeRole"
+                        }
+                    ]
+                },
+                "Arn": "arn:aws:iam::123456789012:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport"
+            },
+            {
+                "RoleName": "AWSServiceRoleForTrustedAdvisor",
+                "RoleId": "AROAXY5COEUBVQLGGZ7H7",
+                "Path": "/aws-service-role/trustedadvisor.amazonaws.com/",
+                "MaxSessionDuration": 3600,
+                "Description": "Access for the AWS Trusted Advisor Service to help reduce cost, increase performance, and improve security of your AWS environment.",
+                "CreateDate": "2021-02-11 18:33:54+00:00",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Principal": {
+                                "Service": "trustedadvisor.amazonaws.com"
+                            },
+                            "Effect": "Allow",
+                            "Action": "sts:AssumeRole"
+                        }
+                    ]
+                },
+                "Arn": "arn:aws:iam::123456789012:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor"
+            },
+            {
+                "RoleName": "cg-lambda-invoker-vulnerable_lambda_cgidqhlz86ajy2",
+                "RoleId": "AROAXY5COEUB2MCVTFDWK",
+                "Path": "/",
+                "MaxSessionDuration": 3600,
+                "CreateDate": "2022-06-13 06:19:56+00:00",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Sid": "",
+                            "Principal": {
+                                "AWS": "arn:aws:iam::123456789012:user/cg-bilbo-vulnerable_lambda_cgidqhlz86ajy2"
+                            },
+                            "Effect": "Allow",
+                            "Action": "sts:AssumeRole"
+                        }
+                    ]
+                },
+                "Arn": "arn:aws:iam::123456789012:role/cg-lambda-invoker-vulnerable_lambda_cgidqhlz86ajy2"
+            },
+            {
+                "RoleName": "vulnerable_lambda_cgidqhlz86ajy2-policy_applier_lambda1",
+                "RoleId": "AROAXY5COEUBUTCJUBWA6",
+                "Path": "/",
+                "MaxSessionDuration": 3600,
+                "CreateDate": "2022-06-13 06:19:39+00:00",
+                "AssumeRolePolicyDocument": {
+                    "Version": "2012-10-17",
+                    "Statement": [
+                        {
+                            "Sid": "",
+                            "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                            },
+                            "Effect": "Allow",
+                            "Action": "sts:AssumeRole"
+                        }
+                    ]
+                },
+                "Arn": "arn:aws:iam::123456789012:role/vulnerable_lambda_cgidqhlz86ajy2-policy_applier_lambda1"
+            }
+        ]
+    }
+}

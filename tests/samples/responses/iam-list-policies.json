@@ -1,0 +1,33 @@
+{
+    "args": {
+        "Scope": "Local"
+    },
+    "response": {
+        "Policies": [
+            {
+                "Arn": "arn:aws:iam::123456789012:policy/my-test-iam-policy",
+                "AttachmentCount": 1,
+                "CreateDate": "2022-05-07 12:23:02+00:00",
+                "DefaultVersionId": "v2",
+                "IsAttachable": true,
+                "Path": "/",
+                "PermissionsBoundaryUsageCount": 0,
+                "PolicyId": "ANPAXY5COEUB6TNHSUQJ7",
+                "PolicyName": "my-test-iam-policy",
+                "UpdateDate": "2022-05-07 12:29:43+00:00"
+            },
+            {
+                "Arn": "arn:aws:iam::123456789012:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidu63ju2eo1y",
+                "AttachmentCount": 1,
+                "CreateDate": "2022-06-16 05:57:05+00:00",
+                "DefaultVersionId": "v1",
+                "IsAttachable": true,
+                "Path": "/",
+                "PermissionsBoundaryUsageCount": 0,
+                "PolicyId": "ANPAXY5COEUBSIRZANN57",
+                "PolicyName": "cg-raynor-policy-iam_privesc_by_rollback_cgidu63ju2eo1y",
+                "UpdateDate": "2022-06-16 05:57:07+00:00"
+            }
+        ]
+    }
+}

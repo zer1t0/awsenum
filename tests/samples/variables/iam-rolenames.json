@@ -1,0 +1,11 @@
+{
+    "iam-rolenames": [
+        "AWSServiceRoleForECS",
+        "AWSServiceRoleForElasticLoadBalancing",
+        "AWSServiceRoleForRDS",
+        "AWSServiceRoleForSupport",
+        "AWSServiceRoleForTrustedAdvisor",
+        "cg-lambda-invoker-vulnerable_lambda_cgidqhlz86ajy2",
+        "vulnerable_lambda_cgidqhlz86ajy2-policy_applier_lambda1"
+    ]
+}

@@ -1,0 +1,60 @@
+type: object
+patternProperties:
+  # Services
+  .+:
+    type: object
+    patternProperties:
+      # Operations
+      .+:
+        type: object
+        properties:
+          allowed_client_error: {type: string}
+          versions:
+            type: array
+            items:
+              type: object
+              properties:
+
+                invar:
+                  oneOf:
+                    - type: object
+                      properties:
+                        name: {type: string}
+                        mode: {enum: [foreach, single]}
+                      required: [name]
+                      additionalProperties: false
+                    - type: string
+
+                args:
+                  type: object
+                  patternProperties:
+                    .+:
+                      oneOf:
+                      - type: object
+                        properties:
+                          invar_path: {type: string}
+                          mode: {enum: [foreach, single]}
+                        required: [invar_path]
+                        additionalProperties: false
+
+                      - type: object
+                        properties:
+                          value: {}
+                          mode: {enum: [foreach, single]}
+                        required: [value]
+                        additionalProperties: false
+
+                outvars:
+                  type: object
+                  patternProperties:
+                    .+: {type: string}
+
+                additionalProperties: false
+
+          outvars:
+            type: object
+            patternProperties:
+              .+: {type: string}
+
+        additionalProperties: false                      
+    

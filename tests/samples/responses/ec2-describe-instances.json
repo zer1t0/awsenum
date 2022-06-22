@@ -1,0 +1,110 @@
+{
+    "args": {},
+    "response": {
+        "Reservations": [
+            {
+                "ReservationId": "r-02a3f596d91211712",
+                "OwnerId": "123456789012",
+                "Instances": [
+                    {
+                        "MetadataOptions": {
+                            "HttpEndpoint": "enabled",
+                            "HttpPutResponseHopLimit": 1,
+                            "HttpTokens": "optional",
+                            "State": "pending"
+                        },
+                        "CapacityReservationSpecification": {
+                            "CapacityReservationPreference": "open"
+                        },
+                        "CpuOptions": {
+                            "ThreadsPerCore": 1,
+                            "CoreCount": 1
+                        },
+                        "VirtualizationType": "hvm",
+                        "Tags": [],
+                        "StateReason": {
+                            "Message": "pending",
+                            "Code": "pending"
+                        },
+                        "SourceDestCheck": true,
+                        "SecurityGroups": [
+                            {
+                                "GroupId": "sg-0598c7d356eba48d7",
+                                "GroupName": "MySecurityGroup"
+                            }
+                        ],
+                        "RootDeviceType": "ebs",
+                        "RootDeviceName": "/dev/xvda",
+                        "NetworkInterfaces": [
+                            {
+                                "InterfaceType": "interface",
+                                "VpcId": "vpc-1234567890abcdef0",
+                                "SubnetId": "subnet-04a636d18e83cfacb",
+                                "Status": "in-use",
+                                "SourceDestCheck": true,
+                                "PrivateIpAddresses": [
+                                    {
+                                        "PrivateIpAddress": "10.0.0.157",
+                                        "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+                                        "Primary": true
+                                    }
+                                ],
+                                "PrivateIpAddress": "10.0.0.157",
+                                "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+                                "OwnerId": "123456789012",
+                                "NetworkInterfaceId": "eni-0c0a29997760baee7",
+                                "MacAddress": "0a:ab:58:e0:67:e2",
+                                "Ipv6Addresses": [],
+                                "Groups": [
+                                    {
+                                        "GroupId": "sg-0598c7d356eba48d7",
+                                        "GroupName": "MySecurityGroup"
+                                    }
+                                ],
+                                "Description": "",
+                                "Attachment": {
+                                    "Status": "attaching",
+                                    "DeviceIndex": 0,
+                                    "DeleteOnTermination": true,
+                                    "AttachmentId": "eni-attach-0e325c07e928a0405",
+                                    "AttachTime": "2018-05-10T08:05:20.000Z"
+                                }
+                            }
+                        ],
+                        "Hypervisor": "xen",
+                        "EbsOptimized": false,
+                        "ClientToken": "",
+                        "BlockDeviceMappings": [],
+                        "Architecture": "x86_64",
+                        "VpcId": "vpc-1234567890abcdef0",
+                        "SubnetId": "subnet-04a636d18e83cfacb",
+                        "StateTransitionReason": "",
+                        "State": {
+                            "Name": "pending",
+                            "Code": 0
+                        },
+                        "PublicDnsName": "",
+                        "ProductCodes": [],
+                        "PrivateIpAddress": "10.0.0.157",
+                        "PrivateDnsName": "ip-10-0-0-157.us-east-2.compute.internal",
+                        "Placement": {
+                            "Tenancy": "default",
+                            "GroupName": "",
+                            "AvailabilityZone": "us-east-2a"
+                        },
+                        "Monitoring": {
+                            "State": "disabled"
+                        },
+                        "LaunchTime": "2018-05-10T08:05:20.000Z",
+                        "KeyName": "MyKeyPair",
+                        "InstanceType": "t2.micro",
+                        "InstanceId": "i-1234567890abcdef0",
+                        "ImageId": "ami-0abcdef1234567890",
+                        "AmiLaunchIndex": 0
+                    }
+                ],
+                "Groups": []
+            }
+        ]
+    }
+}

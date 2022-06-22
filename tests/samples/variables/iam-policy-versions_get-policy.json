@@ -1,0 +1,8 @@
+{
+    "iam-policy-versions": {
+        "policy": "arn:aws:iam::123456789012:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidu63ju2eo1y",
+        "versions": [
+            "v1"
+        ]
+    }
+}

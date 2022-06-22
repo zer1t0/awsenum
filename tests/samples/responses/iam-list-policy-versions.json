@@ -1,0 +1,34 @@
+{
+    "response": {
+        "Versions": [
+            {
+                "VersionId": "v5",
+                "IsDefaultVersion": false,
+                "CreateDate": "2022-06-16 05:57:07+00:00"
+            },
+            {
+                "VersionId": "v4",
+                "IsDefaultVersion": false,
+                "CreateDate": "2022-06-16 05:57:07+00:00"
+            },
+            {
+                "VersionId": "v3",
+                "IsDefaultVersion": false,
+                "CreateDate": "2022-06-16 05:57:07+00:00"
+            },
+            {
+                "VersionId": "v2",
+                "IsDefaultVersion": false,
+                "CreateDate": "2022-06-16 05:57:07+00:00"
+            },
+            {
+                "VersionId": "v1",
+                "IsDefaultVersion": true,
+                "CreateDate": "2022-06-16 05:57:05+00:00"
+            }
+        ]
+    },
+    "args": {
+        "PolicyArn": "arn:aws:iam::123456789012:policy/cg-raynor-policy-iam_privesc_by_rollback_cgidu63ju2eo1y"
+    }
+}

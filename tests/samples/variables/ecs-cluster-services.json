@@ -1,0 +1,10 @@
+{
+    "ecs-cluster-services": {
+        "cluster": "arn:aws:ecs:us-east-1:123456789012:cluster/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster",
+        "services": [
+            "arn:aws:ecs:us-east-1:123456789012:service/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster/privd",
+            "arn:aws:ecs:us-east-1:123456789012:service/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster/vault",
+            "arn:aws:ecs:us-east-1:123456789012:service/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster/vulnsite"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "args": {
+        "RoleName": "AWSServiceRoleForElasticLoadBalancing"
+    },
+    "response": {
+        "AttachedPolicies": [
+            {
+                "PolicyName": "AWSElasticLoadBalancingServiceRolePolicy",
+                "PolicyArn": "arn:aws:iam::aws:policy/aws-service-role/AWSElasticLoadBalancingServiceRolePolicy"
+            }
+        ]
+    }
+}

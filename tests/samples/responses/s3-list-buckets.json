@@ -1,0 +1,19 @@
+{
+    "response": {
+        "Buckets": [
+            {
+            "Name": "test2joadijfoisadjiofjd",
+            "CreationDate": "2022-05-24T06:24:25.000Z"
+        },
+            {
+            "Name": "testaskldfjaiopsdcnoidc",
+            "CreationDate": "2022-05-24T06:23:54.000Z"
+        }
+        ],
+        "Owner": {
+            "DisplayName": "myself",
+            "ID": "d3e4102ab110f7b65e08e6fbf9b0745b69e5055bc4dfcb1e61498234d9f1dafd"
+        }
+    },
+    "args": {}
+}

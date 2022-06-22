@@ -1,0 +1,6 @@
+argcomplete
+boto3
+botocore
+jmespath
+requests
+pyyaml

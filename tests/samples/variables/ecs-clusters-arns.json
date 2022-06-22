@@ -1,0 +1,5 @@
+{
+    "ecs-clusters-arns": [
+        "arn:aws:ecs:us-east-1:123456789012:cluster/ecs-takeover-ecs_takeover_cgidmdfsp0i5dv-cluster"
+    ]
+}
