@@ -14,6 +14,10 @@ setuptools.setup(
     author="Eloy Perez Gonzalez",
     author_email="zer1t0ps@protonmail.com",
     description="Enumerate AWS permissions and resources",
+    url="https://github.com/zer1t0/awsenum",
+    project_urls={
+        "Repository": "https://github.com/zer1t0/awsenum"
+    },
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(),
