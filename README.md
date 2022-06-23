@@ -5,6 +5,7 @@ awsenum is a tool to identify what permissions your account has in AWS by brutef
 ## Installation
 
 ```
+git clone https://github.com/zer1t0/awsenum
 cd awsenum/
 pip install .
 ```
